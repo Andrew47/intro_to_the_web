@@ -1,6 +1,8 @@
-<% if @name %>
-<h1>'My name is <%=@name%>'</h1>
+
+<% unless @name.empty? %>
+<h1>'My name is <%=@name%> and I am a <%=@animal%>'</h1>
 <% end %>
+
 <div style='display:inline-block; border: 3px dashed red'>
   <img src='http://bit.ly/1eze8aE'>
 </div>

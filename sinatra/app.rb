@@ -22,6 +22,7 @@ post '/named-cat' do
   p params
   # erb(:form)
   @name = params[:name]
+  @animal = params[:animal]
   # Alternatively could put html in separate file: File.read('cat_html_file.html')
   erb(:index)
 end
